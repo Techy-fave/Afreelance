@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afreelance Signup</title>
+    <link rel="stylesheet" href="./Signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Afreelance</div>
+        <h2>Join as a client or talent</h2>
+        <div class="option" onclick="selectOption('client')">
+            <span class="icon">👤</span>
+            <span>I'm a client, hiring for a project</span>
+            <input type="radio" name="userType" class="radio" id="client">
+        </div>
+        <div class="option" onclick="selectOption('talent')">
+            <span class="icon">🛠</span>
+            <span>I'm a talent, looking for work</span>
+            <input type="radio" name="userType" class="radio" id="talent">
+        </div>
+        <button class="btn" id="createAccount" disabled>Create Account</button>
+        <div class="login-link">Already have an account? <a href="./Login.html">Log In</a></div>
+    </div>
+
+    <script>
+        function selectOption(type) {
+            document.getElementById(type).checked = true;
+            document.getElementById("createAccount").disabled = false;
+        }
+    </script>
+</body>
+</html>

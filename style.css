@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navbar section */
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo a {
+    /* font-size: 12px; */
+    color: #007a33;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo-image {
+    height: 400px;
+    width: 300px;
+}
+.logo-image:hover {
+    transform: scale(1.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin: 0; */
+    padding: 0;
+    margin-left: 30vw;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color:#007a33;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width:200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+    color: #007a33;
+}
+
+.sign-in-btn {
+    background-color: #007a33;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 2vw;
+}
+
+.post-job-btn:hover {
+    background-color: #007a33;
+}
+
+/* Hero Section styles */
+.hero {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    opacity: 0.5;
+}
+
+/* Initial Background */
+.hero {
+    background-image: url('./Images/Africans\ Working\ Office.png');
+}
+
+/* Input & Button */
+.hero input {
+    padding: 10px;
+    width: 300px;
+}
+
+.btn {
+    background: #ffd700; /* Gold */
+    color: #007a33; /* Green */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Center Content */
+#containercontent {
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Categories Section styles */
+.categories {
+    background: #fff;
+    padding: 40px 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background: #007a33; /* Green */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.category-text {
+    font-size: 20px;
+    color: #FACC15;
+    margin-bottom: 15px;
+}
+/* How It Works styles */
+/* .how-it-works {
+    background: #e0e0e0;
+    padding: 40px 20px;
+}
+
+.how-it-works ol {
+    padding-left: 20px;
+} */
+
+/* Freelancer Showcase styles */
+/* .showcase {
+    background: #fff;
+    padding: 40px 20px;
+}
+
+.freelancer {
+    margin: 20px 0;
+} */
+.showcase {
+    background: #fff; 
+    color: #ffffff;
+    padding: 60px 20px;
+    /* font-family: 'Poppins', sans-serif; */
+    /* background-image: url('./Images/1111466_Businesswomen_Workplace_3840x2160.mp4'); */
+    /* opacity: 0.5; */
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.showcase-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.showcase-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007a33; 
+}
+
+.showcase-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffd700;
+    margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.freelancer-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.freelancer {
+    display: flex;
+    align-items: center;
+    background: #005f26;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.freelancer-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.freelancer-info h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.freelancer-info p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.stars {
+    color: #FACC15;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .showcase-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .showcase-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .freelancer-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonials styles */
+.testimonials {
+   background-color: #fff;
+    padding: 40px 20px;
+    color: #007a33;
+}
+
+/* Newsletter Signup styles */
+.newsletter {
+    background: #007a33; /* Green */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+}
+
+/* Footer styles */
+.footer {
+    background: #007a33; /* Green */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.social-media,
+.contact-info {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a,
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .categories, .how-it-works, .showcase, .testimonials, .newsletter {
+        padding: 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .freelancer {
+        margin: 15px 0;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .social-media,
+    .contact-info {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .newsletter input {
+        width: 80%;
+    }
+}
+
+.login-body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #007a33; /* Green */
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #007a33; /* Green */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #005f26;
+}
+
+.signup-link {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #007a33; /* Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input, .login-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
